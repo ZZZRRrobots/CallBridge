@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBridge</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main class="app">
+        <header>
+            <h1>CallBridge</h1>
+            <p>🇪🇬 Egyptian Arabic ↔ 🇮🇹 Italian</p>
+        </header>
+
+        <section class="language-box">
+            <button id="arabicBtn" class="language active">
+                🇪🇬 Arabic
+            </button>
+
+            <span>↔</span>
+
+            <button id="italianBtn" class="language">
+                🇮🇹 Italian
+            </button>
+        </section>
+
+        <section class="conversation">
+            <div class="message">
+                <small>Detected speech</small>
+                <p id="originalText">Waiting...</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="message translation">
+                <small>Translation</small>
+                <p id="translatedText">Waiting...</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="listenBtn" class="listen">
+                🎤 Start Listening
+            </button>
+
+            <button id="voiceBtn">
+                🔊 Voice: ON
+            </button>
+        </section>
+
+        <button id="summaryBtn">
+            📋 Generate Call Summary
+        </button>
+
+        <div id="status">Ready</div>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>

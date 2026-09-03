@@ -1,0 +1,107 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+.app {
+    width: min(600px, 92%);
+    margin: 40px auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+.language-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+button {
+    border: 0;
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.language {
+    background: #374151;
+    color: white;
+}
+
+.language.active {
+    background: #2563eb;
+}
+
+.conversation {
+    background: #1f2937;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.message {
+    background: #374151;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.message small {
+    color: #9ca3af;
+}
+
+.message p {
+    font-size: 20px;
+    min-height: 28px;
+}
+
+.translation {
+    background: #243b53;
+}
+
+.arrow {
+    font-size: 25px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.listen {
+    background: #2563eb;
+    color: white;
+}
+
+#summaryBtn {
+    width: 100%;
+    margin-top: 15px;
+    background: #374151;
+    color: white;
+}
+
+#status {
+    margin-top: 20px;
+    color: #9ca3af;
+}
